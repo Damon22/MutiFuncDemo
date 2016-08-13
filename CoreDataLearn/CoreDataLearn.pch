@@ -1,0 +1,23 @@
+//
+//  CoreDataLearn.pch
+//  CoreDataLearn
+//
+//  Created by 高继鹏 on 16/5/31.
+//  Copyright © 2016年 GaoJipeng. All rights reserved.
+//
+
+#ifndef CoreDataLearn_pch
+#define CoreDataLearn_pch
+
+#ifdef __OBJC__
+
+#import <CoreData/CoreData.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <TCPlayerSDK/TCPlayerSDK.h>
+#import "UIColor+XCAdditions.h"
+#endif
+
+#import "TCPlayItem.h"
+
+#endif /* CoreDataLearn_pch */
