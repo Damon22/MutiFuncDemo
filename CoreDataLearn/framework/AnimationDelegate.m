@@ -312,6 +312,11 @@
 {
     currentDuration = nextDuration;
     
+    // 防止transformView被提前释放
+    if (!transformView || !transformView.imageStackArray) {
+        return;
+    }
+    
     NSUInteger frameCount = [transformView.imageStackArray count];
     AnimationFrame* currentFrame = [transformView.imageStackArray lastObject];
     CALayer *targetLayer = nil;

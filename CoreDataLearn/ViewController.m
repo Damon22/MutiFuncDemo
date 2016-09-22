@@ -19,7 +19,9 @@
 #import "TestDataViewController.h"
 #import "UIKitDemoViewController.h"
 #import "DownLoadDemoViewController.h"
+#import "DownloadPlayViewController.h"
 #import "HSDownloadManager.h"
+#import "TYDownloadModel.h"
 #import "TaskModel.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -27,6 +29,7 @@
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *tableSource;
 @property (nonatomic, strong) NSMutableArray *dataArray;
+@property (nonatomic, strong) NSMutableArray *downloadArr;
 
 @end
 
@@ -56,9 +59,10 @@
     [super viewDidLoad];
     self.title = @"首页";
     self.edgesForExtendedLayout = UIRectEdgeAll;
-    self.tableSource = @[@"CoreData",@"PDF",@"TableViewTree",@"FlipView",@"PickView",@"PlayerVC",@"PractiseView",@"ScrollView",@"CustomScrollView",@"testData",@"UIKitDemo",@"DownloadDemo"];
+    self.tableSource = @[@"CoreData",@"PDF",@"TableViewTree",@"FlipView",@"PickView",@"PlayerVC",@"PractiseView",@"ScrollView",@"CustomScrollView",@"testData",@"UIKitDemo",@"DownloadDemo",@"DownloadPlayDemo"];
     
     [self prepareData];
+    [self prepareDownloadPlayData];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -97,6 +101,9 @@
     UIKitDemoViewController *uiKitDemo = [[UIKitDemoViewController alloc] init];
     DownLoadDemoViewController *downloadVc = [main instantiateViewControllerWithIdentifier:@"DownLoadDemoViewController"];
     downloadVc.downloadArr = self.dataArray;
+    DownloadPlayViewController *downloadPlayVc = [main instantiateViewControllerWithIdentifier:@"DownloadPlayViewController"];
+    downloadPlayVc.downloadArr = self.downloadArr;
+    
     if (indexPath.row == 0) {
         tempVC = coreDataVc;
     }else if (indexPath.row == 1) {
@@ -121,6 +128,8 @@
         tempVC = uiKitDemo;
     }else if (indexPath.row == 11) {
         tempVC = downloadVc;
+    }else if (indexPath.row == 12) {
+        tempVC = downloadPlayVc;
     }
     [self.navigationController pushViewController:tempVC animated:YES];
 }
@@ -149,6 +158,24 @@
 //    third.destinationPath=[kCachePath stringByAppendingString:third.name];
     third.progress = [[HSDownloadManager sharedInstance] progress:third.url];
     [_dataArray addObject:third];
+}
+
+- (void)prepareDownloadPlayData
+{
+    _downloadArr = [NSMutableArray array];
+    NSString *downloadUrl = @"http://imgcache.qq.com/qzone/biz/gdt/dev/sdk/ios/release/GDT_iOS_SDK.zip";
+    TYDownloadModel *model = [[TYDownloadModel alloc] initWithURLString:downloadUrl];
+    [_downloadArr addObject:model];
+    
+    
+    NSString *downloadUrl1 = @"http://android-mirror.bugly.qq.com:8080/eclipse_mirror/juno/content.jar";
+    TYDownloadModel *anotherModel = [[TYDownloadModel alloc] initWithURLString:downloadUrl1];
+    [_downloadArr addObject:anotherModel];
+    
+    
+    NSString *downloadUrl2 = @"http://4402.vod.myqcloud.com/4402_fa11faccf7e311e5a0cbbbca3e6e518c.f20.mp4";
+    TYDownloadModel *third = [[TYDownloadModel alloc] initWithURLString:downloadUrl2];
+    [_downloadArr addObject:third];
 }
 
 - (void)didReceiveMemoryWarning {

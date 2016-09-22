@@ -34,6 +34,14 @@
 		4B3E29331D1BC5A30023F902 /* TCPlayerVideoTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E29271D1BC5A30023F902 /* TCPlayerVideoTypeView.m */; };
 		4B3E29341D1BC5A30023F902 /* TCPlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E29291D1BC5A30023F902 /* TCPlayItem.m */; };
 		4B3E29371D1BD0650023F902 /* ScreenSizeCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E29361D1BD0650023F902 /* ScreenSizeCount.m */; };
+		4B4253341D92CE2300D7785B /* TYDownLoadDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B42532C1D92CE2300D7785B /* TYDownLoadDataManager.m */; };
+		4B4253351D92CE2300D7785B /* TYDownLoadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B42532F1D92CE2300D7785B /* TYDownLoadModel.m */; };
+		4B4253361D92CE2300D7785B /* TYDownloadSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4253311D92CE2300D7785B /* TYDownloadSessionManager.m */; };
+		4B4253371D92CE2300D7785B /* TYDownloadUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4253331D92CE2300D7785B /* TYDownloadUtility.m */; };
+		4B42533A1D92CE9B00D7785B /* DownloadPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4253391D92CE9B00D7785B /* DownloadPlayViewController.m */; };
+		4B42533D1D92D56000D7785B /* DirectionMPMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B42533C1D92D56000D7785B /* DirectionMPMoviePlayerViewController.m */; };
+		4B4253401D92D62200D7785B /* CircleProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B42533F1D92D62200D7785B /* CircleProgressButton.m */; };
+		4B4253431D9379E200D7785B /* DownloadPlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4253421D9379E200D7785B /* DownloadPlayCell.m */; };
 		4B4535AD1CDC90BD00083CD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4535AC1CDC90BD00083CD0 /* main.m */; };
 		4B4535B01CDC90BD00083CD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4535AF1CDC90BD00083CD0 /* AppDelegate.m */; };
 		4B4535B31CDC90BD00083CD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4535B21CDC90BD00083CD0 /* ViewController.m */; };
@@ -76,6 +84,7 @@
 		4BCAB0A11D52F69400961E2A /* HSSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCAB09C1D52F69400961E2A /* HSSessionModel.m */; };
 		4BCAB0A21D52F69400961E2A /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCAB09F1D52F69400961E2A /* NSString+Hash.m */; };
 		4BCDE4651D06BE6700D1A779 /* TableViewTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDE4641D06BE6700D1A779 /* TableViewTreeController.m */; };
+		4BEBDAA41D6E7EE00065A26B /* PlayCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEBDAA31D6E7EE00065A26B /* PlayCustomView.m */; };
 		4BF7B1191D2E85930072981D /* ScrollInsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF7B1181D2E85930072981D /* ScrollInsideViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +138,23 @@
 		4B3E29291D1BC5A30023F902 /* TCPlayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlayItem.m; sourceTree = "<group>"; };
 		4B3E29351D1BD0650023F902 /* ScreenSizeCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSizeCount.h; sourceTree = "<group>"; };
 		4B3E29361D1BD0650023F902 /* ScreenSizeCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSizeCount.m; sourceTree = "<group>"; };
+		4B42532B1D92CE2300D7785B /* TYDownLoadDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDownLoadDataManager.h; sourceTree = "<group>"; };
+		4B42532C1D92CE2300D7785B /* TYDownLoadDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDownLoadDataManager.m; sourceTree = "<group>"; };
+		4B42532D1D92CE2300D7785B /* TYDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDownloadDelegate.h; sourceTree = "<group>"; };
+		4B42532E1D92CE2300D7785B /* TYDownLoadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDownLoadModel.h; sourceTree = "<group>"; };
+		4B42532F1D92CE2300D7785B /* TYDownLoadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDownLoadModel.m; sourceTree = "<group>"; };
+		4B4253301D92CE2300D7785B /* TYDownloadSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDownloadSessionManager.h; sourceTree = "<group>"; };
+		4B4253311D92CE2300D7785B /* TYDownloadSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDownloadSessionManager.m; sourceTree = "<group>"; };
+		4B4253321D92CE2300D7785B /* TYDownloadUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDownloadUtility.h; sourceTree = "<group>"; };
+		4B4253331D92CE2300D7785B /* TYDownloadUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDownloadUtility.m; sourceTree = "<group>"; };
+		4B4253381D92CE9B00D7785B /* DownloadPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPlayViewController.h; sourceTree = "<group>"; };
+		4B4253391D92CE9B00D7785B /* DownloadPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPlayViewController.m; sourceTree = "<group>"; };
+		4B42533B1D92D56000D7785B /* DirectionMPMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionMPMoviePlayerViewController.h; sourceTree = "<group>"; };
+		4B42533C1D92D56000D7785B /* DirectionMPMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionMPMoviePlayerViewController.m; sourceTree = "<group>"; };
+		4B42533E1D92D62200D7785B /* CircleProgressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressButton.h; sourceTree = "<group>"; };
+		4B42533F1D92D62200D7785B /* CircleProgressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressButton.m; sourceTree = "<group>"; };
+		4B4253411D9379E200D7785B /* DownloadPlayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPlayCell.h; sourceTree = "<group>"; };
+		4B4253421D9379E200D7785B /* DownloadPlayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPlayCell.m; sourceTree = "<group>"; };
 		4B4535A81CDC90BD00083CD0 /* CoreDataLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4535AC1CDC90BD00083CD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B4535AE1CDC90BD00083CD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -206,6 +232,8 @@
 		4BCAB09F1D52F69400961E2A /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		4BCDE4631D06BE6700D1A779 /* TableViewTreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewTreeController.h; sourceTree = "<group>"; };
 		4BCDE4641D06BE6700D1A779 /* TableViewTreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTreeController.m; sourceTree = "<group>"; };
+		4BEBDAA21D6E7EE00065A26B /* PlayCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayCustomView.h; sourceTree = "<group>"; };
+		4BEBDAA31D6E7EE00065A26B /* PlayCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayCustomView.m; sourceTree = "<group>"; };
 		4BF7B1171D2E85930072981D /* ScrollInsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollInsideViewController.h; sourceTree = "<group>"; };
 		4BF7B1181D2E85930072981D /* ScrollInsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollInsideViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -261,6 +289,8 @@
 				4B751E9F1D4C945000370B17 /* UIKitDemoViewController.m */,
 				4BCAB0751D50BCF300961E2A /* DownLoadDemoViewController.h */,
 				4BCAB0761D50BCF300961E2A /* DownLoadDemoViewController.m */,
+				4B4253381D92CE9B00D7785B /* DownloadPlayViewController.h */,
+				4B4253391D92CE9B00D7785B /* DownloadPlayViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -268,6 +298,8 @@
 		4B2545581CFBD003001B366B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4B42533E1D92D62200D7785B /* CircleProgressButton.h */,
+				4B42533F1D92D62200D7785B /* CircleProgressButton.m */,
 				4B2545451CF8379C001B366B /* DBCell.h */,
 				4B2545461CF8379C001B366B /* DBCell.m */,
 				4B3E28DC1D1968D80023F902 /* PickView.h */,
@@ -295,6 +327,10 @@
 				4BCAB0821D51BF1B00961E2A /* MoveBallView.m */,
 				4BCAB0871D52206700961E2A /* DownloadInfoCell.h */,
 				4BCAB0881D52206700961E2A /* DownloadInfoCell.m */,
+				4BEBDAA21D6E7EE00065A26B /* PlayCustomView.h */,
+				4BEBDAA31D6E7EE00065A26B /* PlayCustomView.m */,
+				4B4253411D9379E200D7785B /* DownloadPlayCell.h */,
+				4B4253421D9379E200D7785B /* DownloadPlayCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -342,6 +378,22 @@
 			path = TCPlayerUI;
 			sourceTree = "<group>";
 		};
+		4B42532A1D92CE2300D7785B /* TYDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				4B42532B1D92CE2300D7785B /* TYDownLoadDataManager.h */,
+				4B42532C1D92CE2300D7785B /* TYDownLoadDataManager.m */,
+				4B42532D1D92CE2300D7785B /* TYDownloadDelegate.h */,
+				4B42532E1D92CE2300D7785B /* TYDownLoadModel.h */,
+				4B42532F1D92CE2300D7785B /* TYDownLoadModel.m */,
+				4B4253301D92CE2300D7785B /* TYDownloadSessionManager.h */,
+				4B4253311D92CE2300D7785B /* TYDownloadSessionManager.m */,
+				4B4253321D92CE2300D7785B /* TYDownloadUtility.h */,
+				4B4253331D92CE2300D7785B /* TYDownloadUtility.m */,
+			);
+			path = TYDownloadManager;
+			sourceTree = "<group>";
+		};
 		4B45359F1CDC90BD00083CD0 = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +417,9 @@
 		4B4535AA1CDC90BD00083CD0 /* CoreDataLearn */ = {
 			isa = PBXGroup;
 			children = (
+				4B42533B1D92D56000D7785B /* DirectionMPMoviePlayerViewController.h */,
+				4B42533C1D92D56000D7785B /* DirectionMPMoviePlayerViewController.m */,
+				4B42532A1D92CE2300D7785B /* TYDownloadManager */,
 				4BCAB0981D52F69400961E2A /* HSDownloadManager */,
 				4BCAB08A1D5222C000961E2A /* FGGDownloader */,
 				4B9428B91D2FE23D00BBFA16 /* iToast */,
@@ -489,7 +544,7 @@
 		4B4535A01CDC90BD00083CD0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = GaoJipeng;
 				TargetAttributes = {
 					4B4535A71CDC90BD00083CD0 = {
@@ -549,6 +604,7 @@
 				4B3E29341D1BC5A30023F902 /* TCPlayItem.m in Sources */,
 				4B2545561CF845B7001B366B /* Person.m in Sources */,
 				4B3E292E1D1BC5A30023F902 /* TCCloudPlayerView.m in Sources */,
+				4B42533A1D92CE9B00D7785B /* DownloadPlayViewController.m in Sources */,
 				4B3E29331D1BC5A30023F902 /* TCPlayerVideoTypeView.m in Sources */,
 				4BCAB0901D5222C000961E2A /* FGGDownloadManager.m in Sources */,
 				4BA50BFA1D1BE1FA0048C6A8 /* TableViewController2.m in Sources */,
@@ -557,6 +613,7 @@
 				4BCAB0971D5236E300961E2A /* UIColor+XCAdditions.m in Sources */,
 				4BA703511D19044B00083B85 /* AnimationDelegate.m in Sources */,
 				4BCAB0861D51C31000961E2A /* BaseCircleView.m in Sources */,
+				4B4253431D9379E200D7785B /* DownloadPlayCell.m in Sources */,
 				4BA50BF91D1BE1FA0048C6A8 /* TableViewController1.m in Sources */,
 				4BA50BFE1D1CC7080048C6A8 /* PractiseViewController.m in Sources */,
 				4B4535B01CDC90BD00083CD0 /* AppDelegate.m in Sources */,
@@ -570,13 +627,18 @@
 				4B2545611CFBD503001B366B /* PDFTableViewController.m in Sources */,
 				4BCAB0891D52206700961E2A /* DownloadInfoCell.m in Sources */,
 				4B3E29371D1BD0650023F902 /* ScreenSizeCount.m in Sources */,
+				4B4253371D92CE2300D7785B /* TYDownloadUtility.m in Sources */,
+				4BEBDAA41D6E7EE00065A26B /* PlayCustomView.m in Sources */,
 				4B4535AD1CDC90BD00083CD0 /* main.m in Sources */,
 				4BA703461D19032400083B85 /* FlipViewController.m in Sources */,
 				4BF7B1191D2E85930072981D /* ScrollInsideViewController.m in Sources */,
+				4B4253341D92CE2300D7785B /* TYDownLoadDataManager.m in Sources */,
 				4BCAB08F1D5222C000961E2A /* FGGDownloader.m in Sources */,
 				4B3E292F1D1BC5A30023F902 /* TCPlayerActionHandler.m in Sources */,
+				4B4253351D92CE2300D7785B /* TYDownLoadModel.m in Sources */,
 				4B2545541CF845B7001B366B /* Card.m in Sources */,
 				4B751EA61D4C9D1600370B17 /* FlowerTransformView.m in Sources */,
+				4B42533D1D92D56000D7785B /* DirectionMPMoviePlayerViewController.m in Sources */,
 				4B2545441CF6FD67001B366B /* CoreDataViewController.m in Sources */,
 				4B751EA01D4C945000370B17 /* UIKitDemoViewController.m in Sources */,
 				4B3E28DB1D194A180023F902 /* PickViewController.m in Sources */,
@@ -596,6 +658,8 @@
 				4B3E292D1D1BC5A30023F902 /* TCCloudPlayerControlView.m in Sources */,
 				4BCAB0A21D52F69400961E2A /* NSString+Hash.m in Sources */,
 				4BA703541D19044B00083B85 /* GenericAnimationView.m in Sources */,
+				4B4253361D92CE2300D7785B /* TYDownloadSessionManager.m in Sources */,
+				4B4253401D92D62200D7785B /* CircleProgressButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,8 +699,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -680,8 +746,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -710,6 +778,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -731,6 +800,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
