@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationBar.translucent = NO; //半透明效果
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

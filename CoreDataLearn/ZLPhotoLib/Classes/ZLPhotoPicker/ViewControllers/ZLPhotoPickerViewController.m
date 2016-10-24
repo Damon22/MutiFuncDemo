@@ -11,7 +11,7 @@
 #import "ZLPhoto.h"
 #import "UIViewController+Alert.h"
 
-@interface ZLPhotoPickerViewController () <UIAlertViewDelegate, UIPopoverControllerDelegate>
+@interface ZLPhotoPickerViewController () <UIAlertViewDelegate>
 @property (nonatomic , weak) ZLPhotoPickerGroupViewController *groupVc;
 @end
 
@@ -111,7 +111,6 @@
     }
     __weak typeof(vc)weakVc = vc;
     if (weakVc != nil) {
-        
         [weakVc presentViewController:self animated:YES completion:nil];
     }
 }
