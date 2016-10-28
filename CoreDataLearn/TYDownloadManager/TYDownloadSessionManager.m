@@ -9,6 +9,7 @@
 #import "TYDownloadSessionManager.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <UIKit/UIKit.h>
+#import "NSURLSession+TYCorrectedResumeData.h"
 
 /**
  *  下载模型
@@ -77,6 +78,7 @@
 @end
 
 #define IS_IOS8ORLATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8)
+#define IS_IOS10ORLATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10)
 
 @implementation TYDownloadSessionManager
 
@@ -126,8 +128,7 @@
             if (IS_IOS8ORLATER) {
                 _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:_backgroundConfigure]delegate:self delegateQueue:self.queue];
             }else{
-                //_session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration backgroundSessionConfiguration:_backgroundConfigure]delegate:self delegateQueue:self.queue];
-                _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:_backgroundConfigure] delegate:self delegateQueue:self.queue];
+                _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration backgroundSessionConfiguration:_backgroundConfigure]delegate:self delegateQueue:self.queue];
             }
         }else {
             _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:self.queue];
@@ -251,7 +252,11 @@
         NSData *resumeData = [self resumeDataFromFileWithDownloadModel:downloadModel];
         
         if ([self isValideResumeData:resumeData]) {
-            downloadModel.task = [self.session downloadTaskWithResumeData:resumeData];
+            if (IS_IOS10ORLATER) {
+                downloadModel.task = [self.session downloadTaskWithCorrectResumeData:resumeData];
+            }else {
+                 downloadModel.task = [self.session downloadTaskWithResumeData:resumeData];
+            }
         }else {
             NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:downloadModel.downloadURL]];
             downloadModel.task = [self.session downloadTaskWithRequest:request];

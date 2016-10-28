@@ -90,7 +90,7 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        _maxDownloadCount = 2;
+        _maxDownloadCount = 1;
         _resumeDownloadFIFO = YES;
         _isBatchDownload = NO;
     }

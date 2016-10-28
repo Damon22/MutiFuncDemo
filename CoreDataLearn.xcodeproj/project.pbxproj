@@ -15,6 +15,7 @@
 		4B2545561CF845B7001B366B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2545521CF845B7001B366B /* Person.m */; };
 		4B25455E1CFBD199001B366B /* Lecture3Slides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4B25455D1CFBD199001B366B /* Lecture3Slides.pdf */; };
 		4B2545611CFBD503001B366B /* PDFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2545601CFBD503001B366B /* PDFTableViewController.m */; };
+		4B2F1DDA1DC0800800DFEEDA /* NSURLSession+TYCorrectedResumeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2F1DD91DC0800800DFEEDA /* NSURLSession+TYCorrectedResumeData.m */; };
 		4B3E28DB1D194A180023F902 /* PickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E28DA1D194A180023F902 /* PickViewController.m */; };
 		4B3E28DE1D1968D80023F902 /* PickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E28DD1D1968D80023F902 /* PickView.m */; };
 		4B3E29021D1B79020023F902 /* DMLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E29011D1B79020023F902 /* DMLineChartView.m */; };
@@ -105,6 +106,8 @@
 		4B25455F1CFBD503001B366B /* PDFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFTableViewController.h; sourceTree = "<group>"; };
 		4B2545601CFBD503001B366B /* PDFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFTableViewController.m; sourceTree = "<group>"; };
 		4B2545621CFD6BE7001B366B /* CoreDataLearn.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataLearn.pch; sourceTree = "<group>"; };
+		4B2F1DD81DC0800800DFEEDA /* NSURLSession+TYCorrectedResumeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+TYCorrectedResumeData.h"; sourceTree = "<group>"; };
+		4B2F1DD91DC0800800DFEEDA /* NSURLSession+TYCorrectedResumeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+TYCorrectedResumeData.m"; sourceTree = "<group>"; };
 		4B3E28D91D194A180023F902 /* PickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickViewController.h; sourceTree = "<group>"; };
 		4B3E28DA1D194A180023F902 /* PickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickViewController.m; sourceTree = "<group>"; };
 		4B3E28DC1D1968D80023F902 /* PickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickView.h; sourceTree = "<group>"; };
@@ -381,6 +384,8 @@
 		4B42532A1D92CE2300D7785B /* TYDownloadManager */ = {
 			isa = PBXGroup;
 			children = (
+				4B2F1DD81DC0800800DFEEDA /* NSURLSession+TYCorrectedResumeData.h */,
+				4B2F1DD91DC0800800DFEEDA /* NSURLSession+TYCorrectedResumeData.m */,
 				4B42532B1D92CE2300D7785B /* TYDownLoadDataManager.h */,
 				4B42532C1D92CE2300D7785B /* TYDownLoadDataManager.m */,
 				4B42532D1D92CE2300D7785B /* TYDownloadDelegate.h */,
@@ -625,6 +630,7 @@
 				4B3E29021D1B79020023F902 /* DMLineChartView.m in Sources */,
 				4BCAB0771D50BCF300961E2A /* DownLoadDemoViewController.m in Sources */,
 				4BCAB0831D51BF1B00961E2A /* MoveBallView.m in Sources */,
+				4B2F1DDA1DC0800800DFEEDA /* NSURLSession+TYCorrectedResumeData.m in Sources */,
 				4B2545611CFBD503001B366B /* PDFTableViewController.m in Sources */,
 				4BCAB0891D52206700961E2A /* DownloadInfoCell.m in Sources */,
 				4B3E29371D1BD0650023F902 /* ScreenSizeCount.m in Sources */,
