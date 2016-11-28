@@ -380,11 +380,7 @@ static NSString *_cellIdentifier = @"collectionViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton  *leftbtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    leftbtn.frame = CGRectMake(0, 0, 20, 19);
-    [leftbtn addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
-    [leftbtn setImage:ImageNamed(@"返回-个人") forState:UIControlStateNormal];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftbtn];
+    
     self.view.backgroundColor = [UIColor blackColor];
 }
 
@@ -400,11 +396,6 @@ static NSString *_cellIdentifier = @"collectionViewCell";
     
     self.navigationController.navigationBar.alpha = 1.0;
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
-}
-
-- (void)backAction:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)setupReload{
@@ -546,7 +537,7 @@ static NSString *_cellIdentifier = @"collectionViewCell";
 }
 
 -(void)setPageLabelPage:(NSInteger)page{
-    self.pageLabel.text = [NSString stringWithFormat:@"%ld / %ld",(long)page + 1, (unsigned long)self.photos.count];
+    self.pageLabel.text = [NSString stringWithFormat:@"%ld / %ld",page + 1, self.photos.count];
     if (self.isPush) {
         self.title = self.pageLabel.text;
     }
