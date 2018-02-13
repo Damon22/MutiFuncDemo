@@ -92,17 +92,10 @@
 -(BOOL) toggleTorch:(BOOL) bEnable;
 
 /*
- * setRenderRotation 设置画面的方向
- * 参数：
- *       rotation : 取值为TX_Enum_Type_HomeOrientation
- * 使用方式：
- * config里面的homeOrientation用来控制竖屏、横屏推流，setRenderRotation用来控制本地渲染方向；
- * 1.竖屏推流，homeOrientation=HOME_ORIENTATION_DOWN，setRenderRotation:HOME_ORIENTATION_DOWN
- * 2.Home键在右横屏推流，ViewController不旋转，homeOrientation=HOME_ORIENTATION_RIGHT，setRenderRotation:HOME_ORIENTATION_RIGHT
- * 3.Home键在右横屏推流，ViewController旋转，homeOrientation=HOME_ORIENTATION_RIGHT，setRenderRotation:HOME_ORIENTATION_DOWN
- * 4.Home键在左横屏推流，ViewController不旋转，homeOrientation=HOME_ORIENTATION_LEFT，setRenderRotation:HOME_ORIENTATION_LEFT
- * 5.Home键在左横屏推流，ViewController旋转，homeOrientation=HOME_ORIENTATION_LEFT，setRenderRotation:HOME_ORIENTATION_DOWN
- */
+ * setRenderRotation 设置本地视频方向
+ * rotation : 取值为 0 , 90, 180, 270（其他值无效） 表示推流端本地视频向右旋转的角度
+ * 注意：横竖屏推流,activty旋转可能会改变本地视频流方向，可以设置此参数让本地视频回到正方向，具体请参考demo设置，如果demo里面的设置满足不了您的业务需求，请自行setRenderRotation到自己想要的方向（tips：推流端setRenderRotation不会改变观众端的视频方向）
+*/
 -(void) setRenderRotation:(int)rotation;
 
 /* setLogLevel 设置log输出级别
@@ -168,6 +161,12 @@
  * touchPoint为传入的对焦点位置
  */
 - (void)setFocusPosition:(CGPoint)touchPoint;
+
+/**
+ * 调整焦距
+ * 说明：distance取值范围 1~5 ，当为1的时候为最远视角（正常镜头），当为5的时候为最近视角（放大镜头），这里最大值推荐为5，超过5后视频数据会变得模糊不清
+ */
+-(void) setZoom:(CGFloat)distance;
 
 /* 以下六个接口用于混音处理，背景音与Mic采集到的人声混合
  * playBGM 播放背景音乐

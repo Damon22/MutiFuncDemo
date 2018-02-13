@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Card.h"
 #import "Person.h"
+#import "Lungs.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self insertCoreData];
-    
+    Lungs *lung = [[Lungs alloc] init];
+    [lung tryBreath];
     // Override point for customization after application launch.
     return YES;
 }

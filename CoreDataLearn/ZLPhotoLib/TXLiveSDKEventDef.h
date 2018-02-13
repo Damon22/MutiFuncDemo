@@ -9,6 +9,7 @@ enum EventID
 /*step2*/    PUSH_EVT_CONNECT_SUCC            =  1001,   // 已经连接推流服务器
 /*step3*/    PUSH_EVT_PUSH_BEGIN              =  1002,   // 已经与服务器握手完毕,开始推流
 /*step1*/    PUSH_EVT_OPEN_CAMERA_SUCC        =  1003,   // 打开摄像头成功
+    		 PUSH_EVT_CHANGE_RESOLUTION		  =  1005,	 //推流动态调整分辨率
     
 /*step1*/    PUSH_ERR_OPEN_CAMERA_FAIL        = -1301,   // 打开摄像头失败
 /*step1*/    PUSH_ERR_OPEN_MIC_FAIL           = -1302,   // 打开麦克风失败

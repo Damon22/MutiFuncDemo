@@ -41,6 +41,12 @@ typedef NS_ENUM(NSInteger, TX_Enum_Type_VideoResolution) {
     VIDEO_RESOLUTION_TYPE_1280_720,
 };
 
+typedef NS_ENUM(NSInteger, TX_Enum_Type_AutoAdjustStrategy) {
+    AUTO_ADJUST_BITRATE_STRATEGY_1  = 0,
+    AUTO_ADJUST_BITRATE_RESOLUTION_STRATEGY_1,
+    AUTO_ADJUST_BITRATE_STRATEGY_2,
+    AUTO_ADJUST_BITRATE_RESOLUTION_STRATEGY_2,
+};
 
 typedef NS_ENUM(NSInteger, TX_Enum_Type_AudioSampleRate) {
     AUDIO_SAMPLE_RATE_8000 = 0,
@@ -60,6 +66,7 @@ typedef NS_ENUM(NSInteger, TXVideoType) {
 
 // 状态键名定义
 #define NET_STATUS_CPU_USAGE         @"CPU_USAGE"        // cpu使用率
+#define NET_STATUS_CPU_USAGE_D       @"CPU_USAGE_DEVICE" // 设备总CPU占用
 #define NET_STATUS_VIDEO_BITRATE     @"VIDEO_BITRATE"    // 当前视频编码器输出的比特率，也就是编码器每秒生产了多少视频数据，单位 kbps
 #define NET_STATUS_AUDIO_BITRATE     @"AUDIO_BITRATE"    // 当前音频编码器输出的比特率，也就是编码器每秒生产了多少音频数据，单位 kbps
 #define NET_STATUS_VIDEO_FPS         @"VIDEO_FPS"        // 当前视频帧率，也就是视频编码器每条生产了多少帧画面
@@ -72,9 +79,12 @@ typedef NS_ENUM(NSInteger, TXVideoType) {
 #define NET_STATUS_SERVER_IP         @"SERVER_IP"
 #define NET_STATUS_CODEC_CACHE       @"CODEC_CACHE"      //编解码缓冲大小
 #define NET_STATUS_CODEC_DROP_CNT    @"CODEC_DROP_CNT"   //编解码队列DROPCNT
+#define NET_STATUS_SET_VIDEO_BITRATE @"SET_VIDEO_BITRATE"
 
 #define EVT_MSG                      @"EVT_MSG"
 #define EVT_TIME                     @"EVT_TIME"
+#define EVT_PARAM1					 @"EVT_PARAM1"
+#define EVT_PARAM2					 @"EVT_PARAM2"
 #define EVT_PLAY_PROGRESS            @"EVT_PLAY_PROGRESS"
 #define EVT_PLAY_DURATION            @"EVT_PLAY_DURATION"
 

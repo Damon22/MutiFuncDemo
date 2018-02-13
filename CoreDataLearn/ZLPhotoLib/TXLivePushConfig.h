@@ -24,7 +24,11 @@
 // 开启硬件加速
 @property (nonatomic, assign)   BOOL                    enableHWAcceleration;
 
-// home键所在方向
+ /* home键所在方向，用来切换横竖屏推流（tips：此参数的设置可能会改变推流端本地视频流方向，此参数设置后，请调用TXLivePush 里的setRenderRotation 来修正推流端本地视频流方向，具体请参考demo设置 ）
+ * 1,homeOrientation=HOME_ORIENTATION_RIGHT Home键在下竖屏推流
+ * 2,homeOrientation=HOME_ORIENTATION_RIGHT Home键在右横屏推流
+ * 3.homeOrientation=HOME_ORIENTATION_LEFT  Home键在左横屏推流
+ */
 @property (nonatomic, assign)   int                     homeOrientation;
 
 // 视频采集帧率
@@ -47,6 +51,10 @@
 
 // 码率自适应: SDK会根据网络情况自动调节视频码率, 调节范围在 (videoBitrateMin - videoBitrateMax)
 @property (nonatomic, assign)   BOOL                    enableAutoBitrate;
+//
+
+// 码率自适应: SDK会根据网络情况自动调节视频码率，同时自动调整分辨率
+@property (nonatomic, assign)	int                     autoAdjustStrategy;
 
 // 视频最大码率，仅当enableAutoBitrate = YES时有效
 @property (nonatomic, assign)   int                     videoBitrateMax;

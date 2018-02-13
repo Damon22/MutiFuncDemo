@@ -87,6 +87,8 @@
 		4BCDE4651D06BE6700D1A779 /* TableViewTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDE4641D06BE6700D1A779 /* TableViewTreeController.m */; };
 		4BEBDAA41D6E7EE00065A26B /* PlayCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEBDAA31D6E7EE00065A26B /* PlayCustomView.m */; };
 		4BF7B1191D2E85930072981D /* ScrollInsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF7B1181D2E85930072981D /* ScrollInsideViewController.m */; };
+		4BF9C24F1E015B5C00AE750E /* Lungs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF9C24E1E015B5C00AE750E /* Lungs.m */; };
+		4BF9C2521E01601200AE750E /* Breath.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF9C2511E01601200AE750E /* Breath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -239,6 +241,10 @@
 		4BEBDAA31D6E7EE00065A26B /* PlayCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayCustomView.m; sourceTree = "<group>"; };
 		4BF7B1171D2E85930072981D /* ScrollInsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollInsideViewController.h; sourceTree = "<group>"; };
 		4BF7B1181D2E85930072981D /* ScrollInsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollInsideViewController.m; sourceTree = "<group>"; };
+		4BF9C24D1E015B5C00AE750E /* Lungs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lungs.h; sourceTree = "<group>"; };
+		4BF9C24E1E015B5C00AE750E /* Lungs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lungs.m; sourceTree = "<group>"; };
+		4BF9C2501E01601200AE750E /* Breath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Breath.h; sourceTree = "<group>"; };
+		4BF9C2511E01601200AE750E /* Breath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Breath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -437,6 +443,10 @@
 				4B2545571CFBCFD2001B366B /* Controller */,
 				4B4535B41CDC90BD00083CD0 /* Main.storyboard */,
 				4B4535AB1CDC90BD00083CD0 /* Supporting Files */,
+				4BF9C24D1E015B5C00AE750E /* Lungs.h */,
+				4BF9C24E1E015B5C00AE750E /* Lungs.m */,
+				4BF9C2501E01601200AE750E /* Breath.h */,
+				4BF9C2511E01601200AE750E /* Breath.m */,
 			);
 			path = CoreDataLearn;
 			sourceTree = "<group>";
@@ -549,12 +559,12 @@
 		4B4535A01CDC90BD00083CD0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = GaoJipeng;
 				TargetAttributes = {
 					4B4535A71CDC90BD00083CD0 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = WTK443T6K8;
+						DevelopmentTeam = KW3AWSDPWD;
 					};
 				};
 			};
@@ -653,12 +663,14 @@
 				4B3E29301D1BC5A30023F902 /* TCPlayerBaseControlView.m in Sources */,
 				4BCAB0A11D52F69400961E2A /* HSSessionModel.m in Sources */,
 				4BA703531D19044B00083B85 /* FlipView.m in Sources */,
+				4BF9C2521E01601200AE750E /* Breath.m in Sources */,
 				4BA50BFB1D1BE1FA0048C6A8 /* TableViewController3.m in Sources */,
 				4B4535B91CDC90BD00083CD0 /* CoreDataLearn.xcdatamodeld in Sources */,
 				4BA50C021D1CC75F0048C6A8 /* PractiseCell.m in Sources */,
 				4B2545551CF845B7001B366B /* Person+CoreDataProperties.m in Sources */,
 				4B3E29321D1BC5A30023F902 /* TCPlayerSlider.m in Sources */,
 				4BCAB0801D519ED300961E2A /* TouchCGView.m in Sources */,
+				4BF9C24F1E015B5C00AE750E /* Lungs.m in Sources */,
 				4B3E28DE1D1968D80023F902 /* PickView.m in Sources */,
 				4B2545471CF8379C001B366B /* DBCell.m in Sources */,
 				4BCDE4651D06BE6700D1A779 /* TableViewTreeController.m in Sources */,
@@ -701,14 +713,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -748,14 +766,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -785,7 +809,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = WTK443T6K8;
+				DEVELOPMENT_TEAM = KW3AWSDPWD;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -807,7 +831,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = WTK443T6K8;
+				DEVELOPMENT_TEAM = KW3AWSDPWD;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -80,7 +80,7 @@ typedef NS_ENUM(NSInteger, TX_Enum_PlayType) {
 /*
 * setRenderRotation 设置画面的方向
  * 参数：
- *       rotation : 角度 0，90，180，270.
+ *       rotation : 详见 TX_Enum_Type_HomeOrientation 的定义.
  */
 -(void) setRenderRotation:(int)rotation;
 
